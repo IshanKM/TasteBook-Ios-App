@@ -5,25 +5,25 @@ struct Homepage: View {
     
     // Sample data
     let trendingRecipes = [
-        Recipe(name: "Green Beans with a Mountain of Panko", imageName: "Green_beans", cookTime: 30, rating: 4.5, reviews: 120),
-        Recipe(name: "Green Bean Casserole", imageName: "Tranding2", cookTime: 45, rating: 4.2, reviews: 85)
+        Recipe(name: "Green Beans with a Mountain of Panko", imageName: "Green_beans", cookTime: 30, rating: 4.5, reviews: 120 , calories: 750),
+        Recipe(name: "Green Bean Casserole", imageName: "Tranding2", cookTime: 45, rating: 4.2, reviews: 85 , calories: 550)
     ]
 
     let recommendedRecipes = [
-        Recipe(name: "Creamy Mashed Potatoes", imageName: "recommand1", cookTime: 40, rating: 4.8, reviews: 200),
-        Recipe(name: "Crispy Panko Chicken", imageName: "recommand2", cookTime: 35, rating: 4.6, reviews: 150)
+        Recipe(name: "Creamy Mashed Potatoes", imageName: "recommand1", cookTime: 40, rating: 4.8, reviews: 200, calories: 400),
+        Recipe(name: "Crispy Panko Chicken", imageName: "recommand2", cookTime: 35, rating: 4.6, reviews: 150 , calories: 350)
     ]
 
     let popularRecipes = [
-        Recipe(name: "Poached Eggs", imageName: "recipe5", cookTime: 15, rating: 4.3, reviews: 98),
-        Recipe(name: "Heinz baked beans", imageName: "recipe6", cookTime: 10, rating: 4.0, reviews: 110),
-        Recipe(name: "Scrambled Eggs", imageName: "recipe7", cookTime: 20, rating: 4.6, reviews: 210),
-        Recipe(name: "Fluffy Egg White Omelette", imageName: "recipe8", cookTime: 25, rating: 4.4, reviews: 132)
+        Recipe(name: "Poached Eggs", imageName: "poachedEggs", cookTime: 15, rating: 4.3, reviews: 98, calories: 520),
+        Recipe(name: "Heinz baked beans", imageName: "heinzBaked", cookTime: 10, rating: 4.0, reviews: 110, calories: 1100),
+        Recipe(name: "Scrambled Eggs", imageName: "scrambledEggs", cookTime: 20, rating: 4.6, reviews: 210, calories: 254),
+        Recipe(name: "Fluffy Egg White Omelette", imageName: "fluffyEgg", cookTime: 25, rating: 4.4, reviews: 132, calories: 700)
     ]
 
     let recentRecipes = [
-        Recipe(name: "Poached Eggs", imageName: "recipe5", cookTime: 15, rating: 4.3, reviews: 98),
-        Recipe(name: "Gochujang Chicken Burgers", imageName: "recipe9", cookTime: 30, rating: 4.7, reviews: 175)
+        Recipe(name: "Poached Eggs", imageName: "poachedEggs", cookTime: 15, rating: 4.3, reviews: 98, calories: 470),
+        Recipe(name: "Gochujang Chicken Burgers", imageName: "recent02", cookTime: 30, rating: 4.7, reviews: 175, calories: 210)
     ]
     
     var body: some View {
@@ -52,7 +52,7 @@ struct Homepage: View {
                     
                     CategorySection()
                     
-                    RecipeList(title: "Popular Category", recipes: popularRecipes)
+                    RecipeList(title: "", recipes: popularRecipes)
                     
                     MealPlanningCard()
                     
@@ -64,7 +64,7 @@ struct Homepage: View {
             }
             .navigationBarHidden(true)
         }
-        .overlay(BottomNavBar(), alignment: .bottom)
+        BottomNavBar()
     }
 }
 
@@ -84,11 +84,13 @@ struct SearchBar: View {
 }
 
 struct RecipeSection: View {
+    
     let title: String
     let recipes: [Recipe]
     
     var body: some View {
         VStack(alignment: .leading) {
+            Spacer()
             HStack {
                 Text(title)
                     .font(.title2)
@@ -126,6 +128,8 @@ struct RecipeCard: View {
             HStack {
                 Image(systemName: "clock")
                 Text("\(recipe.cookTime) mins")
+                Image(systemName: "flame.fill")
+                Text("\(recipe.calories)")
                 Spacer()
                 Image(systemName: "star.fill")
                     .foregroundColor(.yellow)
@@ -141,6 +145,7 @@ struct RecipeCard: View {
 
 struct CategorySection: View {
     var body: some View {
+        Spacer()
         VStack(alignment: .leading) {
             Text("Popular Category")
                 .font(.title2)
@@ -148,6 +153,10 @@ struct CategorySection: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20) {
                     CategoryButton(icon: "🍳", name: "Breakfast")
+                    CategoryButton(icon: "🍕", name: "Fast Food")
+                    CategoryButton(icon: "🥗", name: "Healthy")
+                    CategoryButton(icon: "🍤", name: "Seafood")
+                    CategoryButton(icon: "🍜", name: "Asian")
                     CategoryButton(icon: "🥬", name: "Vegan")
                     CategoryButton(icon: "🍰", name: "Dessert")
                 }
@@ -201,6 +210,15 @@ struct RecipeList: View {
                         Text("\(recipe.cookTime) mins")
                             .font(.caption)
                             .foregroundColor(.gray)
+                        HStack {
+                            Image(systemName: "flame.fill")
+                                .foregroundColor(.gray)
+                                .font(.caption)
+                            Text("\(recipe.calories)")
+                                .font(.caption)
+                                .foregroundColor(.gray)
+                        }
+                        
                     }
                     Spacer()
                     VStack {
@@ -221,14 +239,27 @@ struct RecipeList: View {
 
 struct MealPlanningCard: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        Spacer()
+        VStack(alignment: .center, spacing: 10) {
+            
+            Image("mealPlan")
+                .resizable()
+                .frame(width: 120, height: 150)
+                .offset(y: -20)
+            
+            Spacer()
+            
             Text("Meal planning made easy")
                 .font(.headline)
+            
             Text("Add recommended recipes, instantly create shopping list, schedule meals and get cooking reminders")
-                .font(.caption)
+                .font(.subheadline)
                 .foregroundColor(.gray)
+            
+            Spacer()
+            
             Button("Start Planning") {
-                // Action
+                // Action here
             }
             .padding()
             .background(Color.orange)
@@ -236,13 +267,22 @@ struct MealPlanningCard: View {
             .cornerRadius(10)
         }
         .padding()
-        .background(Color.orange.opacity(0.1))
+        .background(
+            LinearGradient(
+                gradient: Gradient(colors: [Color.white, Color(hex: "#FBBC05"), Color(hex: "#E75B24"), Color(hex: "#E75B24")]),
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .opacity(0.2)
+        )
         .cornerRadius(15)
     }
 }
 
+
 struct PopularChefSection: View {
     var body: some View {
+        Spacer()
         VStack(alignment: .leading) {
             HStack {
                 Text("Popular chef")
@@ -261,6 +301,7 @@ struct PopularChefSection: View {
                     ChefCard(name: "Heshani", imageName: "heshani")
                 }
             }
+            Spacer()
         }
     }
 }
@@ -285,18 +326,25 @@ struct BottomNavBar: View {
     var body: some View {
         HStack {
             NavBarButton(icon: "house.fill", text: "Home")
+                .frame(maxWidth: .infinity)
             NavBarButton(icon: "heart", text: "Favorites")
+                .frame(maxWidth: .infinity)
             NavBarButton(icon: "plus.circle.fill", text: "")
                 .offset(y: -20)
+                .frame(maxWidth: .infinity)
             NavBarButton(icon: "book", text: "Recipes")
+                .frame(maxWidth: .infinity)
             NavBarButton(icon: "person", text: "Profile")
+                .frame(maxWidth: .infinity)
         }
         .padding()
         .background(Color.white)
         .clipShape(RoundedRectangle(cornerRadius: 20))
-        .shadow(radius: 5)
+        .padding(.bottom) // Ensures it's not clipped off-screen
+        .edgesIgnoringSafeArea(.bottom) // Ensures the navbar is attached to the bottom
     }
 }
+
 
 struct NavBarButton: View {
     let icon: String
@@ -323,6 +371,7 @@ struct Recipe: Identifiable {
     let cookTime: Int
     let rating: Double
     let reviews: Int
+    let calories : Int
 }
 
 
