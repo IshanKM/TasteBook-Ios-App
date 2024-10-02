@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct Login_Screen: View {
+    @State private var showHomepage = false // State variable to control the homepage presentation
+
     var body: some View {
         VStack {
             Spacer()
@@ -15,22 +17,30 @@ struct Login_Screen: View {
                 .fontWeight(.bold)
                 .padding(.top)
             
-            Text("TasteBook is an ultimate food recepies app that\nyou can find best cooking recepies with full\ndetails or your can share your cooking ideas with\ncommunity")
+            Text("TasteBook is an ultimate food recipes app that\nyou can find best cooking recipes with full\ndetails or you can share your cooking ideas with\ncommunity")
                 .font(.subheadline)
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
                 .padding()
             
-            Text("Sign in or Create a Account")
+            Text("Sign in or Create an Account")
                 .font(.headline)
                 .padding(.top)
                 .foregroundColor(.orange)
             
             VStack(spacing: 10) {
-                SignInBtn(text: "Continue with Apple", image: "applelogo")
-                SignInBtn(text: "Continue with Google", image: "googleicon")
-                SignInBtn(text: "Continue with Facebook", image: "fbicon")
-                SignInBtn(text: "Continue with E-mail", image: "emaillogo")
+                SignInBtn(text: "Continue with Apple", image: "applelogo") {
+                    continueWithApple()
+                }
+                SignInBtn(text: "Continue with Google", image: "googleicon") {
+                    continueWithGoogle()
+                }
+                SignInBtn(text: "Continue with Facebook", image: "fbicon") {
+                    continueWithFacebook()
+                }
+                SignInBtn(text: "Continue with E-mail", image: "emaillogo") {
+                    continueWithEmail()
+                }
             }
             .padding()
             
@@ -45,19 +55,42 @@ struct Login_Screen: View {
             Image("bottombar")
                 .resizable()
                 .frame(width: .infinity, height: 100)
-            
         }
-        .edgesIgnoringSafeArea(.bottom)
+        .fullScreenCover(isPresented: $showHomepage) {
+            Homepage()
+        }
+    }
+    
+    private func continueWithApple() {
+        print("Continuing with Apple...")
+        showHomepage = true // Show homepage when button is pressed
+    }
+    
+    private func continueWithGoogle() {
+        print("Continuing with Google...")
+        showHomepage = true
+    }
+    
+    private func continueWithFacebook() {
+        print("Continuing with Facebook...")
+        showHomepage = true
+    }
+    
+    private func continueWithEmail() {
+        print("Continuing with Email...")
+        showHomepage = true
     }
 }
+
 
 struct SignInBtn: View {
     let text: String
     let image: String
+    let action: () -> Void // Closure for button action
     
     var body: some View {
         Button(action: {
-            // Handle sign in action
+            action() // Call the action closure
         }) {
             HStack {
                 Image(systemName: image)

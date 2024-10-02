@@ -14,7 +14,9 @@
 		79974D4F2CAD319600FEECED /* TasteBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79974D4E2CAD319600FEECED /* TasteBookTests.swift */; };
 		79974D5A2CAD319600FEECED /* TasteBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79974D592CAD319600FEECED /* TasteBookUITests.swift */; };
 		79B896F42CAD544400D541A1 /* Login Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B896F32CAD544400D541A1 /* Login Screen.swift */; };
-		79B897202CAD87FF00D541A1 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8971F2CAD87FF00D541A1 /* SplashScreen.swift */; };
+		79B897282CAD89D700D541A1 /* splshScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B897272CAD89D700D541A1 /* splshScreen.swift */; };
+		79B8972D2CAD8E4400D541A1 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8972C2CAD8E4400D541A1 /* Homepage.swift */; };
+		79B897322CADD01F00D541A1 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B897312CADD01F00D541A1 /* Favorites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,9 @@
 		79974D592CAD319600FEECED /* TasteBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteBookUITests.swift; sourceTree = "<group>"; };
 		79974D5B2CAD319600FEECED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79B896F32CAD544400D541A1 /* Login Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login Screen.swift"; sourceTree = "<group>"; };
-		79B8971F2CAD87FF00D541A1 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashScreen.swift; path = ../../../../../Desktop/SplashScreen.swift; sourceTree = "<group>"; };
+		79B897272CAD89D700D541A1 /* splshScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splshScreen.swift; sourceTree = "<group>"; };
+		79B8972C2CAD8E4400D541A1 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
+		79B897312CADD01F00D541A1 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				79974D3C2CAD319200FEECED /* TasteBookApp.swift */,
-				79B8971F2CAD87FF00D541A1 /* SplashScreen.swift */,
 				79974D3E2CAD319200FEECED /* ContentView.swift */,
 				79974D402CAD319500FEECED /* Assets.xcassets */,
 				79974D452CAD319500FEECED /* Info.plist */,
 				79974D422CAD319500FEECED /* Preview Content */,
 				79B896F32CAD544400D541A1 /* Login Screen.swift */,
+				79B897272CAD89D700D541A1 /* splshScreen.swift */,
+				79B8972C2CAD8E4400D541A1 /* Homepage.swift */,
+				79B897312CADD01F00D541A1 /* Favorites.swift */,
 			);
 			path = TasteBook;
 			sourceTree = "<group>";
@@ -265,9 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79B897202CAD87FF00D541A1 /* SplashScreen.swift in Sources */,
 				79974D3F2CAD319200FEECED /* ContentView.swift in Sources */,
 				79974D3D2CAD319200FEECED /* TasteBookApp.swift in Sources */,
+				79B897282CAD89D700D541A1 /* splshScreen.swift in Sources */,
+				79B897322CADD01F00D541A1 /* Favorites.swift in Sources */,
+				79B8972D2CAD8E4400D541A1 /* Homepage.swift in Sources */,
 				79B896F42CAD544400D541A1 /* Login Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
