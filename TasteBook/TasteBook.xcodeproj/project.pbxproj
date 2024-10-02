@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79974D3D2CAD319200FEECED /* TasteBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79974D3C2CAD319200FEECED /* TasteBookApp.swift */; };
+		79974D3F2CAD319200FEECED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79974D3E2CAD319200FEECED /* ContentView.swift */; };
+		79974D412CAD319500FEECED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79974D402CAD319500FEECED /* Assets.xcassets */; };
+		79974D442CAD319500FEECED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79974D432CAD319500FEECED /* Preview Assets.xcassets */; };
+		79974D4F2CAD319600FEECED /* TasteBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79974D4E2CAD319600FEECED /* TasteBookTests.swift */; };
+		79974D5A2CAD319600FEECED /* TasteBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79974D592CAD319600FEECED /* TasteBookUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79974D4B2CAD319600FEECED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79974D312CAD319200FEECED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79974D382CAD319200FEECED;
+			remoteInfo = TasteBook;
+		};
+		79974D562CAD319600FEECED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79974D312CAD319200FEECED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79974D382CAD319200FEECED;
+			remoteInfo = TasteBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		79974D392CAD319200FEECED /* TasteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TasteBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79974D3C2CAD319200FEECED /* TasteBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteBookApp.swift; sourceTree = "<group>"; };
+		79974D3E2CAD319200FEECED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		79974D402CAD319500FEECED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79974D432CAD319500FEECED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79974D452CAD319500FEECED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79974D4A2CAD319600FEECED /* TasteBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TasteBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79974D4E2CAD319600FEECED /* TasteBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteBookTests.swift; sourceTree = "<group>"; };
+		79974D502CAD319600FEECED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79974D552CAD319600FEECED /* TasteBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TasteBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79974D592CAD319600FEECED /* TasteBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteBookUITests.swift; sourceTree = "<group>"; };
+		79974D5B2CAD319600FEECED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79974D362CAD319200FEECED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79974D472CAD319600FEECED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79974D522CAD319600FEECED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79974D302CAD319200FEECED = {
+			isa = PBXGroup;
+			children = (
+				79974D3B2CAD319200FEECED /* TasteBook */,
+				79974D4D2CAD319600FEECED /* TasteBookTests */,
+				79974D582CAD319600FEECED /* TasteBookUITests */,
+				79974D3A2CAD319200FEECED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79974D3A2CAD319200FEECED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79974D392CAD319200FEECED /* TasteBook.app */,
+				79974D4A2CAD319600FEECED /* TasteBookTests.xctest */,
+				79974D552CAD319600FEECED /* TasteBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79974D3B2CAD319200FEECED /* TasteBook */ = {
+			isa = PBXGroup;
+			children = (
+				79974D3C2CAD319200FEECED /* TasteBookApp.swift */,
+				79974D3E2CAD319200FEECED /* ContentView.swift */,
+				79974D402CAD319500FEECED /* Assets.xcassets */,
+				79974D452CAD319500FEECED /* Info.plist */,
+				79974D422CAD319500FEECED /* Preview Content */,
+			);
+			path = TasteBook;
+			sourceTree = "<group>";
+		};
+		79974D422CAD319500FEECED /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				79974D432CAD319500FEECED /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		79974D4D2CAD319600FEECED /* TasteBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				79974D4E2CAD319600FEECED /* TasteBookTests.swift */,
+				79974D502CAD319600FEECED /* Info.plist */,
+			);
+			path = TasteBookTests;
+			sourceTree = "<group>";
+		};
+		79974D582CAD319600FEECED /* TasteBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79974D592CAD319600FEECED /* TasteBookUITests.swift */,
+				79974D5B2CAD319600FEECED /* Info.plist */,
+			);
+			path = TasteBookUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79974D382CAD319200FEECED /* TasteBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79974D5E2CAD319600FEECED /* Build configuration list for PBXNativeTarget "TasteBook" */;
+			buildPhases = (
+				79974D352CAD319200FEECED /* Sources */,
+				79974D362CAD319200FEECED /* Frameworks */,
+				79974D372CAD319200FEECED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TasteBook;
+			productName = TasteBook;
+			productReference = 79974D392CAD319200FEECED /* TasteBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79974D492CAD319600FEECED /* TasteBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79974D612CAD319600FEECED /* Build configuration list for PBXNativeTarget "TasteBookTests" */;
+			buildPhases = (
+				79974D462CAD319600FEECED /* Sources */,
+				79974D472CAD319600FEECED /* Frameworks */,
+				79974D482CAD319600FEECED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79974D4C2CAD319600FEECED /* PBXTargetDependency */,
+			);
+			name = TasteBookTests;
+			productName = TasteBookTests;
+			productReference = 79974D4A2CAD319600FEECED /* TasteBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79974D542CAD319600FEECED /* TasteBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79974D642CAD319600FEECED /* Build configuration list for PBXNativeTarget "TasteBookUITests" */;
+			buildPhases = (
+				79974D512CAD319600FEECED /* Sources */,
+				79974D522CAD319600FEECED /* Frameworks */,
+				79974D532CAD319600FEECED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79974D572CAD319600FEECED /* PBXTargetDependency */,
+			);
+			name = TasteBookUITests;
+			productName = TasteBookUITests;
+			productReference = 79974D552CAD319600FEECED /* TasteBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79974D312CAD319200FEECED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					79974D382CAD319200FEECED = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					79974D492CAD319600FEECED = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 79974D382CAD319200FEECED;
+					};
+					79974D542CAD319600FEECED = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 79974D382CAD319200FEECED;
+					};
+				};
+			};
+			buildConfigurationList = 79974D342CAD319200FEECED /* Build configuration list for PBXProject "TasteBook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79974D302CAD319200FEECED;
+			productRefGroup = 79974D3A2CAD319200FEECED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79974D382CAD319200FEECED /* TasteBook */,
+				79974D492CAD319600FEECED /* TasteBookTests */,
+				79974D542CAD319600FEECED /* TasteBookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79974D372CAD319200FEECED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79974D442CAD319500FEECED /* Preview Assets.xcassets in Resources */,
+				79974D412CAD319500FEECED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79974D482CAD319600FEECED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79974D532CAD319600FEECED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79974D352CAD319200FEECED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79974D3F2CAD319200FEECED /* ContentView.swift in Sources */,
+				79974D3D2CAD319200FEECED /* TasteBookApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79974D462CAD319600FEECED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79974D4F2CAD319600FEECED /* TasteBookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79974D512CAD319600FEECED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79974D5A2CAD319600FEECED /* TasteBookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79974D4C2CAD319600FEECED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79974D382CAD319200FEECED /* TasteBook */;
+			targetProxy = 79974D4B2CAD319600FEECED /* PBXContainerItemProxy */;
+		};
+		79974D572CAD319600FEECED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79974D382CAD319200FEECED /* TasteBook */;
+			targetProxy = 79974D562CAD319600FEECED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		79974D5C2CAD319600FEECED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79974D5D2CAD319600FEECED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79974D5F2CAD319600FEECED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TasteBook/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TasteBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.squaregame.TasteBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79974D602CAD319600FEECED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TasteBook/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TasteBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.squaregame.TasteBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79974D622CAD319600FEECED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TasteBookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.squaregame.TasteBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TasteBook.app/TasteBook";
+			};
+			name = Debug;
+		};
+		79974D632CAD319600FEECED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TasteBookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.squaregame.TasteBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TasteBook.app/TasteBook";
+			};
+			name = Release;
+		};
+		79974D652CAD319600FEECED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TasteBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.squaregame.TasteBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TasteBook;
+			};
+			name = Debug;
+		};
+		79974D662CAD319600FEECED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TasteBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.squaregame.TasteBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TasteBook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79974D342CAD319200FEECED /* Build configuration list for PBXProject "TasteBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79974D5C2CAD319600FEECED /* Debug */,
+				79974D5D2CAD319600FEECED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79974D5E2CAD319600FEECED /* Build configuration list for PBXNativeTarget "TasteBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79974D5F2CAD319600FEECED /* Debug */,
+				79974D602CAD319600FEECED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79974D612CAD319600FEECED /* Build configuration list for PBXNativeTarget "TasteBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79974D622CAD319600FEECED /* Debug */,
+				79974D632CAD319600FEECED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79974D642CAD319600FEECED /* Build configuration list for PBXNativeTarget "TasteBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79974D652CAD319600FEECED /* Debug */,
+				79974D662CAD319600FEECED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79974D312CAD319200FEECED /* Project object */;
+}
