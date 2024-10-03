@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct Login_Screen: View {
-    @State private var showHomepage = false // State variable to control the homepage presentation
+    @State private var showHomepage = false
 
     var body: some View {
         VStack {
@@ -45,7 +45,7 @@ struct Login_Screen: View {
             .padding()
             
             Button("I'll do it later") {
-                // Handle later action
+                
             }
             .foregroundColor(.blue)
             .padding(.top)
@@ -54,8 +54,10 @@ struct Login_Screen: View {
             
             Image("bottombar")
                 .resizable()
+                .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
                 .frame(width: .infinity, height: 100)
         }
+        .ignoresSafeArea()
         .fullScreenCover(isPresented: $showHomepage) {
             Homepage()
         }
@@ -63,7 +65,7 @@ struct Login_Screen: View {
     
     private func continueWithApple() {
         print("Continuing with Apple...")
-        showHomepage = true // Show homepage when button is pressed
+        showHomepage = true
     }
     
     private func continueWithGoogle() {
@@ -86,11 +88,11 @@ struct Login_Screen: View {
 struct SignInBtn: View {
     let text: String
     let image: String
-    let action: () -> Void // Closure for button action
+    let action: () -> Void
     
     var body: some View {
         Button(action: {
-            action() // Call the action closure
+            action()
         }) {
             HStack {
                 Image(systemName: image)

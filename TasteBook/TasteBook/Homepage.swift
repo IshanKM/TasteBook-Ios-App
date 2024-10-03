@@ -26,6 +26,8 @@ struct Homepage: View {
         Recipe(name: "Gochujang Chicken Burgers", imageName: "recent02", cookTime: 30, rating: 4.7, reviews: 175, calories: 210)
     ]
     
+    
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -35,12 +37,12 @@ struct Homepage: View {
                             .font(.largeTitle)
                             .fontWeight(.bold)
                         Spacer()
-                        Image("TasteBookLogo")
+                        Image("logo")
                             .resizable()
                             .frame(width: 50, height: 50)
                     }
                     
-                    Text("Good Morning !")
+                    Text(getGreetingMessage())
                         .font(.headline)
                         .foregroundColor(.orange)
                     
@@ -68,6 +70,32 @@ struct Homepage: View {
     }
 }
 
+func getGreetingMessage() -> String {
+    let hour = Calendar.current.component(.hour, from: Date())
+
+    switch hour {
+    case 0..<12:
+        return "Good Morning!"
+    case 12..<16:
+        return "Good Afternoon!"
+    case 16..<18:
+        return "Good Evening!"
+    default:
+        return "Good Night!"
+    }
+}
+
+struct Recipe: Identifiable {
+    let id = UUID()
+    let name: String
+    let imageName: String
+    let cookTime: Int
+    let rating: Double
+    let reviews: Int
+    let calories : Int
+}
+
+
 struct SearchBar: View {
     @Binding var text: String
     
@@ -82,6 +110,8 @@ struct SearchBar: View {
         .cornerRadius(10)
     }
 }
+
+
 
 struct RecipeSection: View {
     
@@ -254,12 +284,14 @@ struct MealPlanningCard: View {
             
             Text("Add recommended recipes, instantly create shopping list, schedule meals and get cooking reminders")
                 .font(.subheadline)
+                .lineLimit(nil)
+                .multilineTextAlignment(.leading)
                 .foregroundColor(.gray)
             
             Spacer()
             
             Button("Start Planning") {
-                // Action here
+               
             }
             .padding()
             .background(Color.orange)
@@ -363,17 +395,6 @@ struct NavBarButton: View {
         }
     }
 }
-
-struct Recipe: Identifiable {
-    let id = UUID()
-    let name: String
-    let imageName: String
-    let cookTime: Int
-    let rating: Double
-    let reviews: Int
-    let calories : Int
-}
-
 
 
 struct Homepage_Previews: PreviewProvider {
